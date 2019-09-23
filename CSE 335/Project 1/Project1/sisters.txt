@@ -1,0 +1,12 @@
+Bertha	big	408.9	2	0.3	cow	stomp
+Cathy	big	168.3	6	2.7	human	chatterbox
+Grizelda	big	324.8	5	1.1	bear	badFurDay
+Isabella	small	22.1	4	0.4	dog	FALSE
+Lancetta	big	150.5	10	57.5	witch	badHairDay
+Lily	med	130.5	8	3.2	princess	tennisRacket
+Moon	small	15.6	7	0	spaceRock	TRUE
+Nectarine	med	130.4	8	3.5	princess	golfClub
+Nes	small	49.3	10	0.6	human	TRUE
+Seamus	med	133.1	9	4.3	human	whip
+Rosaline	med	147.3	9	4	star	wand
+Whispy	big	534.9	1	140	tree	appleBomb
