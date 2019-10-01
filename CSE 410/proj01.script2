@@ -1,0 +1,10 @@
+#!/bin/tcsh -f
+
+set i=1
+cat /user/cse410/Section2/Projects/project01.headers
+while ( $i < $# )
+	cat /user/cse410/Section2/Projects/project01.data | grep $argv[$i] | sort -k 11nr,11 -k 5n,5
+	echo '\n'
+	@ i++
+end
+cat /user/cse410/Section2/Projects/project01.data | grep $argv[$i] | sort -k 11nr,11 -k 5n,5
