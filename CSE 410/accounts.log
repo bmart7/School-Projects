@@ -1,0 +1,36 @@
+[In Thread 2] Transaction "open" on Account "003001" Succeeded
+	--Amount: $50.5	Current Balance: $50.5
+
+[In Thread 2] Transaction "deposit" on Account "003001" Succeeded
+	--Amount: $100	Current Balance: $150.5
+
+[In Thread 2] Transaction "withdraw" on Account "000022" of Amount $100 Failed
+	--Account Doesn't Exist
+
+[In Thread 1] Transaction "open" on Account "000006" Succeeded
+	--Amount: $600	Current Balance: $600
+
+[In Thread 1] Transaction "deposit" on Account "000001" Succeeded
+	--Amount: $100	Current Balance: $200
+
+[In Thread 1] Transaction "withdraw" on Account "000002" Succeeded
+	--Amount: $100	Current Balance: $100
+
+[In Thread 0] Transaction "open" on Account "000006" of Amount $600 Failed
+	--Account Already Exists
+
+[In Thread 0] Transaction "deposit" on Account "000001" Succeeded
+	--Amount: $100	Current Balance: $300
+
+[In Thread 3] Transaction "deposit" on Account "003004" of Amount $50.5 Failed
+	--Account Doesn't Exist
+
+[In Thread 0] Transaction "withdraw" on Account "000002" of Amount $101 Failed
+	--Insufficient Funds
+
+[In Thread 3] Transaction "deposit" on Account "003001" Succeeded
+	--Amount: $100	Current Balance: $250.5
+
+[In Thread 3] Transaction "withdraw" on Account "000006" Succeeded
+	--Amount: $135.5	Current Balance: $464.5
+

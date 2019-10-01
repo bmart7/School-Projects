@@ -1,0 +1,12 @@
+#!/bin/tcsh -f
+
+if ( $# != 2 ) then
+	echo 'Invalid Amount of Arguments'
+else if ( $1 <= 0 ) then
+	echo 'Invalid Number of Records (Positive Integers)'
+else if ( $2 != 'NL' && $2 != 'AL' ) then
+	echo 'Invalid League (NL or AL)'
+else
+	cat /user/cse410/Section2/Projects/project01.headers
+	cat /user/cse410/Section2/Projects/project01.data | grep $argv[2] | sort -k 11nr,11 -k 5n,5 | head -n $argv[1]
+endif
